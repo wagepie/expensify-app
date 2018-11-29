@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "serve": "live-server public/",
-    "build": "webpack --watch",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
     "test": "jest --config=jest.config.json"
   },
@@ -29,6 +30,7 @@
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "enzyme-to-json": "^3.3.4",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "live-server": "^1.2.0",
     "moment": "^2.22.2",
     "node-sass": "^4.10.0",
