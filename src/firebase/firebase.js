@@ -1,5 +1,6 @@
 import * as firebase from 'firebase/app';
 import 'firebase/database';
+import 'firebase/auth';
 
 const config = {
     apiKey: process.env.FIREBASE_API_KEY,
@@ -13,8 +14,9 @@ const config = {
   firebase.initializeApp(config);
 
   const database = firebase.database();
+  const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
-  export { firebase, database as default };
+  export { firebase, googleAuthProvider, database as default };
 
   //database.ref('expenses).on('SELECT FROM 3 BELOW', (snapshot) ={
   //child_removed, child_changed, value, child_added
