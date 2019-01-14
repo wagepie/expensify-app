@@ -1,12 +1,32 @@
 .form {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding-top: 15px;
     > * {
         margin-bottom: $m-size;
     }
 }
 
+.form__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $font-size-medium;
+}
+
+.form__label {
+    width: 115px;
+}
+
 .form__error {
     margin: 0 0 $m-size 0;
     font-style: italic;
+    color: #E74C3C;
+}
+
+.form__text {
+    font-weight: 300;
 }

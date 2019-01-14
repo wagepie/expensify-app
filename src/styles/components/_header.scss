@@ -1,5 +1,6 @@
 .header {
-    background: $dark-blue;
+    background: #fefefe;
+    border-bottom: thin solid #dbcece;
 }
 
 .header__content {
@@ -7,13 +8,18 @@
     display: flex;
     justify-content: space-between;
     padding: $s-size;
-}
-
-.header__title {
-    color: white;
-    text-decoration: none;
-    h1 {
-        margin: 0;
+    a:hover, a:visited, a:link, a:active {
+        text-decoration: none;
+        color: $dark-grey;
     }
 }
 
+.header__title {
+    color: $grey;
+    h1 {
+        margin: 0;
+    }
+    a:hover, a:visited, a:link, a:active {
+        text-decoration: underline;
+    }
+}

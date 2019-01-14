@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import ExpenseForm from './ExpenseForm';
-import { startAddExpense } from '../actions/expenses';
+import PayOffForm from '../form/PayOffForm';
+import { startAddPayOff } from '../../actions/payoff';
 
-export class AddExpensePage extends React.Component {
-    onSubmit = (expense) => {
-        this.props.startAddExpense(expense);
+export class PayOffAddCar extends React.Component {
+    onSubmit = (payoff) => {
+        this.props.startAddPayOff(payoff);
         this.props.history.push('/');
     };
     render() {
@@ -13,11 +13,12 @@ export class AddExpensePage extends React.Component {
             <div>
                 <div className="page-header">
                     <div className="content-container">
-                        <h1 className="page-header__title">Add Expense</h1>
+                        <h1 className="page-header__title">Pay Off Car Loan</h1>
                     </div>
                 </div>
                 <div className="content-container">
-                    <ExpenseForm
+                    <PayOffForm
+                        description='Car Loan'
                         onSubmit={this.onSubmit}
                     />
                 </div>
@@ -27,7 +28,7 @@ export class AddExpensePage extends React.Component {
 };
 
 const mapDispatchToProps = (dispatch) => ({
-    startAddExpense: (expense) => dispatch(startAddExpense(expense))
+    startAddPayOff: (payoff) => dispatch(startAddPayOff(payoff))
 });
 
-export default connect(undefined, mapDispatchToProps)(AddExpensePage);
+export default connect(undefined, mapDispatchToProps)(PayOffAddCar);

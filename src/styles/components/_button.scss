@@ -1,19 +1,229 @@
-.button {
-    background: $blue;
+.button--logout {
+    background: #fefefe;
     border: none;
+    margin: 10px;
+    text-decoration: none;
+    font-size: $font-size-medium;
+    font-weight: 300;
+    color: $dark-grey;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.button--login {
+    width: 28rem;
+    background: $dark-green;
+    border: $dark-green;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: $font-size-xlarge;
+    font-weight: 300;
+    color: white;
+    &:hover {
+        background: $green;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.button--remove {
+    background: $dark-red;
+    border: $dark-red;
+    border-style: solid;
+    border-width: thin;
     color: white;
     display: inline-block;
     padding: $s-size;
+    margin-bottom: $s-size;
     font-weight: 300;
     line-height: 1;
-    font-size: $font-size-large;
     text-decoration: none;
+    border-radius: 10px;
+    width: 265px;
+    &:hover {
+        background: $red;
+    }
 }
 
 .button--link {
+    color: $dark-grey;
     background: none;
 }
 
 .button--secondary {
     background: #888;
+}
+
+
+//WAGE BUTTONS
+
+.wage--calculate {
+    background: $dark-green;
+    border: $dark-green;
+    border-style: solid;
+    border-width: thin;
+    color: white;
+    display: inline-block;
+    padding: $s-size;
+    margin-left: $s-size;
+    margin-right: $s-size;
+    font-weight: 300;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 120px;
+    &:hover {
+        background: $green;
+    }
+}
+
+.wage--add {
+    background: $dark-green;
+    border: $dark-green;
+    border-style: solid;
+    border-width: thin;
+    color: white;
+    display: inline-block;
+    padding: $s-size;
+    margin-top: $s-size;
+    font-weight: 300;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    &:hover {
+        background: $green;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+//PAY OFF BUTTONS
+
+.payoff--calculate {
+    background: $dark-blue;
+    border: $dark-blue;
+    border-style: solid;
+    border-width: thin;
+    color: white;
+    display: inline-block;
+    padding: $s-size;
+    margin-left: $s-size;
+    margin-right: $s-size;
+    font-weight: 300;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 120px;
+    &:hover {
+        background: $blue;
+    }
+}
+
+.payoff--add {
+    background: $dark-blue;
+    border: $dark-blue;
+    border-style: solid;
+    border-width: thin;
+    color: white;
+    display: inline-block;
+    padding: $s-size;
+    margin-top: $s-size;
+    font-weight: 300;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    &:hover {
+        background: $blue;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+//SAVE FOR BUTTONS
+
+.savefor--calculate {
+    background: $dark-orange;
+    border: $dark-orange;
+    border-style: solid;
+    border-width: thin;
+    color: white;
+    display: inline-block;
+    padding: $s-size;
+    margin-left: $s-size;
+    margin-right: $s-size;
+    font-weight: 300;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 120px;
+    &:hover {
+        background: $orange;
+    }
+}
+
+.savefor--add {
+    background: $dark-orange;
+    border: $dark-orange;
+    border-style: solid;
+    border-width: thin;
+    color: white;
+    display: inline-block;
+    padding: $s-size;
+    margin-top: $s-size;
+    font-weight: 300;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    &:hover {
+        background: $orange;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+//BILLS BUTTONS
+
+.bill--calculate {
+    background: $dark-yellow;
+    border: $dark-yellow;
+    border-style: solid;
+    border-width: thin;
+    color: white;
+    display: inline-block;
+    padding: $s-size;
+    margin-left: $s-size;
+    margin-right: $s-size;
+    font-weight: 300;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 120px;
+    &:hover {
+        background: $yellow;
+    }
+}
+
+.bill--add {
+    background: $dark-yellow;
+    border: $dark-yellow;
+    border-style: solid;
+    border-width: thin;
+    color: white;
+    display: inline-block;
+    padding: $s-size;
+    margin-top: $s-size;
+    font-weight: 300;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    &:hover {
+        background: $yellow;
+        color: white;
+        text-decoration: none;
+    }
 }

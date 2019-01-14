@@ -1,0 +1,103 @@
+.fas {
+    color: $light-grey;
+    padding: 10px;
+}
+
+.far {
+    color: $light-grey;
+    padding: 10px;
+}
+
+.payoff-icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 44%;
+    background: $off-white;
+    border: $dark-blue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: $font-size-xlarge;
+    font-weight: 300;
+    color: $light-grey;
+    &:hover {
+        background: $blue;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.savefor-icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 44%;
+    background: $off-white;
+    border: $dark-orange;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: $font-size-xlarge;
+    font-weight: 300;
+    color: $light-grey;
+    &:hover {
+        background: $orange;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.bill-icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 44%;
+    background: $off-white;
+    border: $dark-yellow;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: $font-size-xlarge;
+    font-weight: 300;
+    color: $light-grey;
+    &:hover {
+        background: $yellow;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+// .icon-container {
+//     display: flex;
+//     justify-content: center;
+//     flex-wrap: wrap;
+// }
+
+// .icon-item {    
+//     color: $dark-grey;
+//     border-radius: 25px;
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     width: 40%;
+//     height: 150px; 
+//     border: 1px solid darken($off-white, 7%);
+//     justify-content: space-between;
+//     padding: $s-size;
+//     margin: $s-size;
+//     text-decoration: none;
+//     transition: background .3s ease;
+//     &:hover {
+//         background: $off-white;
+//     }
+// }

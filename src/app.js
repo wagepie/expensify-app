@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import AppRouter, { history } from './routers/AppRouter';
 import configureStore from './store/configureStore'
-import { startSetExpenses } from './actions/expenses';
+import { startSetWages } from './actions/wages';
+import { startSetPayOff } from './actions/payoff';
+import { startSetSaveFor } from './actions/savefor';
+import { startSetBill } from './actions/bill';
 import { login, logout } from './actions/auth';
-import getVisibleExpenses from './selectors/expenses';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import 'react-dates/lib/css/_datepicker.css';
@@ -18,6 +20,7 @@ const jsx = (
         <AppRouter />
     </Provider>  
 );
+
 let hasRendered = false;
 const renderApp = () => {
     if (!hasRendered) {
@@ -31,7 +34,10 @@ ReactDOM.render(<LoadingPage />, document.getElementById('app'))
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {
         store.dispatch(login(user.uid));
-        store.dispatch(startSetExpenses()).then(() => {
+        store.dispatch(startSetWages());
+        store.dispatch(startSetSaveFor());
+        store.dispatch(startSetBill());
+        store.dispatch(startSetPayOff()).then(() => {
             renderApp();
             if (history.location.pathname === '/') {
                 history.push('/dashboard');

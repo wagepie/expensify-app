@@ -1,0 +1,25 @@
+.calc-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.calc-number {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    font-weight: 300;
+    padding-right: 10px;
+}
+
+.calc-text {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: $font-size-medium;
+    padding-right: 10px;
+}

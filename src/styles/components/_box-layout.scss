@@ -1,22 +1,38 @@
 .box-layout {
-    align-items: center;
-    background: url('/images/bg.jpg');
-    background-size: cover;
     display: flex;
-    height: 100vh;
+    align-items: center;
     justify-content: center;
-    width: 100vw;
 }
 
 .box-layout__box {
-    background: fade-out(white, .15);
-    border-radius: 3px;
-    padding: $l-size $m-size;
+    display: flex;
+    flex-direction: column;
+    background: #fefefe;
+    padding: $l-size;
+    margin: $l-size;
     text-align: center;
-    width: 25rem;
+    border: $light-green;
+    border-style: solid;
+    border-width: thin;
+    width: 75rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .box-layout__title {
-    margin: 0 0 $m-size 0;
-    line-height: 1;
+    display: flex;
+    font-size: $font-size-xxlarge;
+    font-weight: 300;
+    color: $dark-grey;
+    margin-bottom: 20px;
+}
+
+.box-layout__bullet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $font-size-large;
+    font-weight: 300;
+    color: $grey;
+    margin-bottom: 20px;
 }

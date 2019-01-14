@@ -1,9 +1,14 @@
 .text-input {
-    border: 1px solid #cacccd;
+    border: none;
+    border-bottom: 1px solid #cacccd;
     height: 50px;
     padding: $s-size;
-    font-size: $font-size-large;
+    font-size: $font-size-medium;
     font-weight: 300;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+//    width: 100%;
 }
 
 .select {

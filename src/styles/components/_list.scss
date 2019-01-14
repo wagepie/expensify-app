@@ -7,30 +7,29 @@
     padding: $s-size $m-size;
 }
 
+.list-footer {
+    background: $off-white;
+    border: 1px solid darken($off-white, 7%);
+    color: $grey;
+    display: flex;
+    justify-content: space-between;
+    padding: $s-size $m-size;
+}
+
 .list-body {
-    margin-bottom: $m-size;
-    @media (min-width: $desktop-breakpoint) {
-        margin-bottom: $l-size;
-    }
+    max-width: 80rem;
 }
 
 .list-item {
-    border: 1px solid darken($off-white, 7%);
-    border-top: none;
     color: $dark-grey;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     padding: $s-size;
     text-decoration: none;
     transition: background .3s ease;
     &:hover {
         background: $off-white;
-    }
-    @media (min-width: $desktop-breakpoint) {
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: $m-size;
     }
 }
 
@@ -38,7 +37,7 @@
     align-items: center;
     justify-content: center;
     color: $grey;
-    padding: $m-size;
+    //padding: $m-size;
     &:hover {
         background: none;
     }
@@ -56,8 +55,155 @@
 
 .list-item__data {
     margin: $s-size 0 0 0;
-    @media (min-width: $desktop-breakpoint) {
-        margin: 0;
-        padding-left: $s-size;
+}
+
+
+//WAGE LIST STYLE
+
+.wagelist-container {
+    margin-top: $m-size;
+    margin-bottom: $m-size;
+    padding: $m-size;
+    border-style: solid;
+    border-width: thin;
+    padding: 10px;
+    border-color: $light-green;
+}
+
+.wagelist-header {
+    background: $light-green;
+    color: $grey;
+    display: flex;
+    justify-content: space-between;
+    padding: $xs-size $s-size;
+}
+
+.wagelist-item {
+    color: $dark-grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: $xs-size $s-size;
+    text-decoration: none;
+    transition: background .2s ease;
+    &:hover {
+        background: lighten($light-green, 7%);
+        text-decoration: none;
     }
 }
+
+//PAY OFF LIST STYLE
+
+.payofflist-container {
+    margin-top: $m-size;
+    margin-bottom: $m-size;
+    padding: $m-size;
+    border-style: solid;
+    border-width: thin;
+    padding: 10px;
+    border-color: $light-blue;
+}
+
+.payofflist-header {
+    background: $light-blue;
+    color: $grey;
+    display: flex;
+    justify-content: space-between;
+    padding: $xs-size $s-size;
+}
+
+.payofflist-item {
+    color: $dark-grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: $xs-size $s-size;
+    text-decoration: none;
+    transition: background .2s ease;
+    &:hover {
+        background: lighten($light-blue, 7%);
+        text-decoration: none;
+    }
+}
+
+//SAVE FOR LIST STYLE
+
+.saveforlist-container {
+    margin-top: $m-size;
+    margin-bottom: $m-size;
+    padding: $m-size;
+    border-style: solid;
+    border-width: thin;
+    padding: 10px;
+    border-color: $light-orange;
+}
+
+.saveforlist-header {
+    background: $light-orange;
+    color: $grey;
+    display: flex;
+    justify-content: space-between;
+    padding: $xs-size $s-size;
+}
+
+.saveforlist-item {
+    color: $dark-grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: $xs-size $s-size;
+    text-decoration: none;
+    transition: background .2s ease;
+    &:hover {
+        background: lighten($light-orange, 7%);
+        text-decoration: none;
+    }
+}
+
+//BILL LIST STYLE
+
+.billlist-container {
+    margin-top: $m-size;
+    margin-bottom: $m-size;
+    padding: $m-size;
+    border-style: solid;
+    border-width: thin;
+    padding: 10px;
+    border-color: $light-yellow;
+}
+
+.billlist-header {
+    background: $light-yellow;
+    color: $grey;
+    display: flex;
+    justify-content: space-between;
+    padding: $xs-size $s-size;
+}
+
+.billlist-item {
+    color: $dark-grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: $xs-size $s-size;
+    text-decoration: none;
+    transition: background .2s ease;
+    &:hover {
+        background: lighten($light-yellow, 7%);
+        text-decoration: none;
+    }
+}
+
+// .list-item__title {
+//     margin: 0;
+//     word-break: break-all;
+// }
+
+// .list-item__sub-title {
+//     color: $grey;
+//     font-size: $font-size-small;
+// }
+
+// .list-item__data {
+//     margin: $s-size 0 0 0;
+// }

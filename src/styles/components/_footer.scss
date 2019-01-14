@@ -1,0 +1,14 @@
+.footer {
+    background: #fefefe;
+    border-top: thin solid #f2f2f2;
+    margin-top: $xl-size;
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $l-size;
+    font-weight: 300;
+    color: $dark-grey;
+}
