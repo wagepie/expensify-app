@@ -11,15 +11,15 @@ const PayOffType = () => (
         </div>
         <div className="content-container">
             <div className="summary-container">
-                <Link className="payoff-icon-container" to="/payoffaddcar">
+                <Link className="payoff-icon-container" to="/payoffaddmortgage">
                     <div>Mortgage</div>
                     <i className="fas fa-home fa-5x"></i>
                 </Link>
-                <Link className="payoff-icon-container" to="/payoffaddcar">
+                <Link className="payoff-icon-container" to="/payoffaddstudent">
                     <div>Student</div>
                     <i className="fas fa-graduation-cap fa-5x"></i>
                 </Link>
-                <Link className="payoff-icon-container" to="/payoffaddcar">
+                <Link className="payoff-icon-container" to="/payoffaddcc">
                     <div>Credit Card</div>
                     <i className="far fa-credit-card fa-5x"></i>
                 </Link>
@@ -27,11 +27,11 @@ const PayOffType = () => (
                     <div>Car</div>
                     <i className="fas fa-car fa-5x"></i>
                 </Link>
-                <Link className="payoff-icon-container" to="/payoffaddcar">
+                <Link className="payoff-icon-container" to="/payoffaddbusiness">
                     <div>Business</div>
                     <i className="fas fa-briefcase fa-5x"></i>
                 </Link>
-                <Link className="payoff-icon-container" to="/payoffaddcar">
+                <Link className="payoff-icon-container" to="/payoffaddother">
                     <div>Other</div>
                     <i className="fas fa-money-bill-wave fa-5x"></i>
                 </Link>

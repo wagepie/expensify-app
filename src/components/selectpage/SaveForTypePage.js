@@ -10,11 +10,11 @@ const SaveForType = () => (
         </div>
         <div className="content-container">
             <div className="summary-container">
-                <Link className="savefor-icon-container" to="/saveforaddcar">
+                <Link className="savefor-icon-container" to="/saveforaddhouse">
                     <div>House</div>
                     <i className="fas fa-home fa-5x"></i>
                 </Link>
-                <Link className="savefor-icon-container" to="/saveforaddcar">
+                <Link className="savefor-icon-container" to="/saveforaddvacation">
                     <div>Vacation</div>
                     <i className="fas fa-map fa-5x"></i>
                 </Link>
@@ -22,15 +22,15 @@ const SaveForType = () => (
                     <div>Car</div>
                     <i className="fas fa-car fa-5x"></i>
                 </Link>
-                <Link className="savefor-icon-container" to="/saveforaddcar">
+                <Link className="savefor-icon-container" to="/saveforaddretirement">
                     <div>Retirement</div>
                     <i className="fas fa-hand-holding-usd fa-5x"></i>
                 </Link>
-                <Link className="savefor-icon-container" to="/saveforaddcar">
+                <Link className="savefor-icon-container" to="/saveforaddbusiness">
                     <div>Business</div>
                     <i className="fas fa-briefcase fa-5x"></i>
                 </Link>
-                <Link className="savefor-icon-container" to="/saveforaddcar">
+                <Link className="savefor-icon-container" to="/saveforaddother">
                     <div>Other</div>
                     <i className="fas fa-piggy-bank fa-5x"></i>
                 </Link>

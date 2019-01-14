@@ -9,7 +9,7 @@ import { billTotal } from '../../selectors/bill-total';
 import numeral from 'numeral';
 
 
-export class SaveForAddCar extends React.Component {
+export class SaveForAddHouse extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -48,7 +48,7 @@ export class SaveForAddCar extends React.Component {
                     <div className="savefor-element">
                         <div className="savefor-header">Save For Information</div>
                         <SaveForForm
-                            description='New Car'
+                            description='New House'
                             onClick={this.onClick}
                             onSubmit={this.onSubmit}
                         />
@@ -88,4 +88,4 @@ const mapDispatchToProps = (dispatch) => ({
     startAddSaveFor: (savefor) => dispatch(startAddSaveFor(savefor)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(SaveForAddCar);
+export default connect(mapStateToProps, mapDispatchToProps)(SaveForAddHouse);

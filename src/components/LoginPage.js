@@ -6,18 +6,31 @@ export const LoginPage = ({ startLogin }) => (
     <div className="box-layout">
         <div className="box-layout__box">
             <div className="box-layout__title">Better allocate your income to achieve your financial goals</div>
-            <div className="box-layout__bullet">
-                <i className="fas fa-university fa-2x"></i>
-                Pay Off Your Loans
-            </div>
-            <div className="box-layout__bullet">
-                <i className="fas fa-piggy-bank fa-2x"></i>
-                Save For Whats Important
-            </div>
-            <div className="box-layout__bullet">
-                <i className="fas fa-file-invoice-dollar fa-2x"></i>
-                Manage Your Bills
-            </div>
+            <table className="box-layout__bullet">
+                <tbody>
+                    <tr>
+                        <td scope="column" width='75'>
+                            <i className="fas fa-university fa-2x"></i>
+                        </td>
+                        <td scope="column" width='225' align='left'>Pay Off Your Loans</td>
+                    </tr>
+                    <tr>
+                        <td scope="column" width='75'>
+                            <i className="fas fa-piggy-bank fa-2x"></i>
+                        </td>
+                        <td scope="column" width='225' align='left'>Save For Whats Important</td>
+                    </tr>
+                    <tr>
+                        <td scope="column" width='75'>                
+                            <i className="fas fa-file-invoice-dollar fa-2x"></i>
+                        </td>
+                        <td scope="column" width='225' align='left'>Manage Your Bills</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
             <button className="button--login" onClick={startLogin}>Free Login with Google</button>
         </div>
     </div>

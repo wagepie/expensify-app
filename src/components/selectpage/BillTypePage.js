@@ -10,7 +10,7 @@ const BillType = () => (
         </div>
         <div className="content-container">
             <div className="summary-container">
-                <Link className="bill-icon-container" to="/billaddfood">
+                <Link className="bill-icon-container" to="/billaddrent">
                     <div>Rent</div>
                     <i className="fas fa-home fa-5x"></i>
                 </Link>
@@ -18,19 +18,19 @@ const BillType = () => (
                     <div>Food</div>
                     <i className="fas fa-utensils fa-5x"></i>
                 </Link>
-                <Link className="bill-icon-container" to="/billaddfood">
+                <Link className="bill-icon-container" to="/billaddutilities">
                     <div>Utilities</div>
                     <i className="far fa-lightbulb fa-5x"></i>
                 </Link>
-                <Link className="bill-icon-container" to="/billaddfood">
+                <Link className="bill-icon-container" to="/billaddtransportation">
                     <div>Transportation</div>
                     <i className="fas fa-car fa-5x"></i>
                 </Link>
-                <Link className="bill-icon-container" to="/billaddfood">
+                <Link className="bill-icon-container" to="/billaddshopping">
                     <div>Shopping</div>
                     <i className="fas fa-shopping-cart fa-5x"></i>
                 </Link>
-                <Link className="bill-icon-container" to="/billaddfood">
+                <Link className="bill-icon-container" to="/billaddother">
                     <div>Other</div>
                     <i className="fas fa-file-invoice-dollar fa-5x"></i>
                 </Link>
