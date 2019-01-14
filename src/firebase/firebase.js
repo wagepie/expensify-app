@@ -13,8 +13,6 @@ const config = {
 
   firebase.initializeApp(config);
   
-  console.log(config);
-
   const database = firebase.database();
   const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
