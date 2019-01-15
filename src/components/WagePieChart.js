@@ -57,7 +57,7 @@ export const WagePieChart = ({ wagesTotal, payoffTotal, saveforTotal, billTotal 
                             <tbody>
                                 <tr>
                                     <td scope="column" width='300'>Pay Off Goals</td>
-                                    <td scope="column" width='300' align='right'>{numeral(payoffTotal).format('$0,0')}</td>
+                                    <td scope="column" width='300' align='right'>({numeral(payoffTotal).format('$0,0')})</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -65,7 +65,7 @@ export const WagePieChart = ({ wagesTotal, payoffTotal, saveforTotal, billTotal 
                             <tbody>
                                 <tr>
                                     <td scope="column" width='300'>Save For Goals</td>
-                                    <td scope="column" width='300' align='right'>{numeral(saveforTotal).format('$0,0')}</td>
+                                    <td scope="column" width='300' align='right'>({numeral(saveforTotal).format('$0,0')})</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -73,7 +73,15 @@ export const WagePieChart = ({ wagesTotal, payoffTotal, saveforTotal, billTotal 
                             <tbody>
                                 <tr>
                                     <td scope="column" width='300'>Bills</td>
-                                    <td scope="column" width='300' align='right'>{numeral(billTotal).format('$0,0')}</td>
+                                    <td scope="column" width='300' align='right'>({numeral(billTotal).format('$0,0')})</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table className="summary-wage">
+                            <tbody>
+                                <tr>
+                                    <td scope="column" width='300'>Remaining Wage</td>
+                                    <td scope="column" width='300' align='right'>{numeral(remainingWage).format('$0,0')}</td>
                                 </tr>
                             </tbody>
                         </table>

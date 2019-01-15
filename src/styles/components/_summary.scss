@@ -29,7 +29,7 @@
     justify-content: space-between;
     font-size: $font-size-large;
     font-weight: 300;
-    padding: $s-size $s-size;
+    padding: $s-size $xs-size;
     text-decoration: none;
     transition: background .2s ease;
     &:hover {
@@ -45,7 +45,7 @@
     justify-content: space-between;
     font-size: $font-size-large;
     font-weight: 300;
-    padding: $s-size $s-size;
+    padding: $s-size $xs-size;
     text-decoration: none;
     transition: background .2s ease;
     &:hover {
@@ -61,7 +61,7 @@
     justify-content: space-between;
     font-size: $font-size-large;
     font-weight: 300;
-    padding: $s-size $s-size;
+    padding: $s-size $xs-size;
     text-decoration: none;
     transition: background .2s ease;
     &:hover {
@@ -77,9 +77,10 @@
     justify-content: space-between;
     font-size: $font-size-large;
     font-weight: 300;
-    padding: $s-size $s-size;
+    padding: $s-size $xs-size;
     text-decoration: none;
     transition: background .2s ease;
+    border-bottom: solid thin $light-grey;
     &:hover {
         background: lighten($light-yellow, 7%);
         text-decoration: none;
